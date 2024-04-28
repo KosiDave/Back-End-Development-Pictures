@@ -11,6 +11,8 @@ RUN pip3 install --upgrade pip==21.3.1
 
 RUN pip3 install -r requirements.txt
 
+RUN pip install pymongo
+
 USER 1001
 
 COPY . /opt/app-root/src
